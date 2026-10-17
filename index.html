@@ -22,13 +22,14 @@
 <body>
 
 <h1>AI Calendar Update</h1>
-<p class="tag">Personal calendar assistant &middot; <code>lawlcchan@gmail.com</code></p>
+<p class="tag">Personal calendar assistant &middot; single-user deployment</p>
 
 <h2>What this is</h2>
 <p>
-  A personal assistant for a single user. It connects to my own Google account so I can
-  create and read calendar entries and check my mail by sending it a message on Telegram.
-  It runs on a private server I control, and it is not a service offered to anyone else.
+  A personal assistant for a single user. It connects to one Google account so the
+  operator can create and read calendar entries and check their mail by sending it a
+  message on Telegram. It runs on a private server, and it is not a service offered to
+  anyone else.
 </p>
 
 <h2>What it can access</h2>
@@ -37,17 +38,17 @@
   <li><strong>Google Calendar &mdash; read, edit, and create events.</strong> Used to add
       appointments on request, including reminders on new events, and to report what's
       scheduled.</li>
-  <li><strong>Gmail &mdash; read only.</strong> Used to summarise and search my mail.
+  <li><strong>Gmail &mdash; read only.</strong> Used to summarise and search mail.
       It cannot send, delete, or modify messages.</li>
 </ul>
 
 <h2>How the data is handled</h2>
 <ul>
-  <li><strong>Single user.</strong> Only my own Google account is authorised. There are no
+  <li><strong>Single user.</strong> Only one Google account is authorised. There are no
       other users and no shared access.</li>
   <li><strong>Self-hosted.</strong> The assistant and its credentials run on a private
-      server I own. OAuth tokens are stored locally in that server's private profile
-      directory with filesystem permissions restricted to the service account.</li>
+      server. OAuth tokens are stored locally in that server's private profile directory
+      with filesystem permissions restricted to the service account.</li>
   <li><strong>No third-party transfer.</strong> Google user data is not sold, shared,
       rented, or provided to any third party, advertiser, or analytics service. There is
       no analytics or advertising code on these pages or in the assistant.</li>
@@ -58,17 +59,14 @@
 
 <h2>Revoking access</h2>
 <p>
-  Access can be withdrawn at any time from your
+  Access can be withdrawn at any time from the
   <a href="https://myaccount.google.com/permissions">Google account permissions</a> page,
   which immediately invalidates the assistant's tokens. The relevant Google API
   services can also be disabled from the Cloud console, which invalidates them as well.
 </p>
 
 <footer>
-  <p>
-    Contact: <a href="mailto:lawlcchan@gmail.com">lawlcchan@gmail.com</a><br>
-    Privacy policy: <a href="./privacy.html">Privacy Policy</a>
-  </p>
+  <p>Privacy policy: <a href="./privacy.html">Privacy Policy</a></p>
 </footer>
 
 </body>
