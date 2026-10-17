@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; AI Calendar Update</title>
+<meta name="description" content="Privacy policy for the AI Calendar Update personal assistant.">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.65 system-ui, -apple-system, Segoe UI, sans-serif;
+         max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .tag { color: #666; font-size: .9rem; margin-top: 0; }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  code { background: rgba(127,127,127,.14); padding: .1rem .35rem; border-radius: 3px; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(127,127,127,.3);
+           vertical-align: top; }
+  th { font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="tag">AI Calendar Update &middot; last updated 17 October 2026</p>
+
+<h2>1. Summary</h2>
+<p>
+  AI Calendar Update ("the assistant") is a personal tool operated by a single user for
+  their own use. It is self-hosted on a private server, authorised only against the
+  operator's own Google account, and not offered to any other person. Google user data
+  accessed by the assistant is not shared with, sold to, or disclosed to any third party.
+</p>
+
+<h2>2. Who this applies to</h2>
+<p>
+  This policy covers the assistant's processing of Google account data belonging to the
+  operator. There are no end users other than the operator. No data is collected from
+  visitors to the app's public website; those pages are static and contain no analytics,
+  advertising, cookies, or tracking scripts.
+</p>
+
+<h2>3. Google permissions requested</h2>
+<p>The assistant requests exactly two OAuth 2.0 scopes. No other scope is requested.</p>
+
+<table>
+  <tr>
+    <th>Scope</th>
+    <th>Capability</th>
+    <th>How it is used</th>
+  </tr>
+  <tr>
+    <td><code>https://www.googleapis.com/auth/calendar</code></td>
+    <td>Calendar: view, edit, create, and permanently delete events</td>
+    <td>
+      Creating appointments at the operator's request; setting default reminders on events
+      the assistant creates; reading scheduled events to answer questions such as what is
+      on my calendar this week. Event deletion is used only to correct events the assistant
+      itself created in error, and always in response to an explicit instruction.
+    </td>
+  </tr>
+  <tr>
+    <td><code>https://www.googleapis.com/auth/gmail.readonly</code></td>
+    <td>Gmail: read only</td>
+    <td>
+      Reading and searching the operator's mail to summarise it or answer questions about
+      it. This scope cannot send, delete, label, or modify messages.
+    </td>
+  </tr>
+</table>
+
+<h2>4. How data is stored</h2>
+<ul>
+  <li>
+    OAuth credentials, including refresh tokens, are stored on the operator's private
+    server in a per-profile directory with filesystem permissions limited to the service
+    account that runs the assistant. They are not written to source control, logs, or
+    backups outside that server.
+  </li>
+  <li>
+    Conversation history is retained locally on that server so the assistant can retain
+    context across messages.
+  </li>
+  <li>
+    Calendar and mail content is read into working memory only to answer the operator's
+    request. It is not copied into any external database or long-term store.
+  </li>
+</ul>
+
+<h2>5. Sharing and third parties</h2>
+<p>
+  Google user data accessed by the assistant is not shared with, sold to, licensed, or
+  disclosed to any third party. There are no third-party analytics, advertising, or
+  tracking services in the assistant or on its public website.
+</p>
+<p>
+  Data is transmitted only to Google's own API endpoints
+  (<code>googleapis.com</code>) to perform the calendar and mail operations described above.
+</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>Authorisation may be revoked at any time from the
+      <a href="https://myaccount.google.com/permissions">Google account permissions</a>
+      page, which immediately invalidates all tokens held by the assistant.</li>
+  <li>Stored conversation history can be deleted by the operator at any time, and is
+      removed when the operator's server profile is deleted.</li>
+  <li>Google account data itself remains under the operator's control in their own Google
+      account and is deleted according to Google's own retention policies.</li>
+</ul>
+
+<h2>7. Model processing</h2>
+<p>
+  Requests handled by the assistant may be transmitted to a third-party language model
+  provider in order to generate a response. Only the conversation context needed to answer
+  the request is sent. The operator has not authorised the assistant to transmit data for
+  model training, and does not knowingly do so.
+</p>
+
+<h2>8. Security</h2>
+<p>
+  The assistant is reachable only through the operator's private messaging account, and
+  is protected by that account's authentication. Google credentials are held with
+  restricted filesystem permissions. No claim of absolute security is made.
+</p>
+
+<h2>9. Changes to this policy</h2>
+<p>
+  Any material change to the scopes requested or the data handling described here will be
+  reflected on this page before the change takes effect.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+  Questions about this policy: <a href="mailto:lawlcchan@gmail.com">lawlcchan@gmail.com</a>
+</p>
+
+<footer>
+  <p>See also: <a href="./index.html">Application home page</a></p>
+</footer>
+
+</body>
+</html>
