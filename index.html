@@ -3,71 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Calendar Update</title>
-<meta name="description" content="A personal Google Calendar and Gmail assistant that runs on a private self-hosted server.">
+<title>Calendar-gmail</title>
 <style>
-  :root { color-scheme: light dark; }
-  body { font: 16px/1.65 system-ui, -apple-system, Segoe UI, sans-serif;
-         max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; }
-  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
-  .tag { color: #666; font-size: .9rem; margin-top: 0; }
-  ul { padding-left: 1.25rem; }
-  li { margin: .4rem 0; }
-  code { background: rgba(127,127,127,.14); padding: .1rem .35rem; border-radius: 3px; }
-  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
-           font-size: .9rem; color: #666; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1.25rem; }
+  code { background: rgba(127,127,127,.14); padding: .1rem .3rem; border-radius: 3px; }
 </style>
 </head>
 <body>
 
-<h1>AI Calendar Update</h1>
-<p class="tag">Personal calendar assistant &middot; single-user deployment</p>
+<h1>Calendar-gmail</h1>
 
-<h2>What this is</h2>
 <p>
-  A personal assistant for a single user. It connects to one Google account so the
-  operator can create and read calendar entries and check their mail by sending it a
-  message on Telegram. It runs on a private server, and it is not a service offered to
-  anyone else.
+  A personal assistant for a single user, running on a private server. It requests two
+  Google permissions: Calendar (read, edit, create) and Gmail (read only).
 </p>
 
-<h2>What it can access</h2>
-<p>Two Google permissions, and nothing beyond them:</p>
-<ul>
-  <li><strong>Google Calendar &mdash; read, edit, and create events.</strong> Used to add
-      appointments on request, including reminders on new events, and to report what's
-      scheduled.</li>
-  <li><strong>Gmail &mdash; read only.</strong> Used to summarise and search mail.
-      It cannot send, delete, or modify messages.</li>
-</ul>
-
-<h2>How the data is handled</h2>
-<ul>
-  <li><strong>Single user.</strong> Only one Google account is authorised. There are no
-      other users and no shared access.</li>
-  <li><strong>Self-hosted.</strong> The assistant and its credentials run on a private
-      server. OAuth tokens are stored locally in that server's private profile directory
-      with filesystem permissions restricted to the service account.</li>
-  <li><strong>No third-party transfer.</strong> Google user data is not sold, shared,
-      rented, or provided to any third party, advertiser, or analytics service. There is
-      no analytics or advertising code on these pages or in the assistant.</li>
-  <li><strong>Limited retention.</strong> Data is read on request to answer a message.
-      Conversation history is retained locally so the assistant retains context between
-      messages, and is not retained by any external party.</li>
-</ul>
-
-<h2>Revoking access</h2>
 <p>
-  Access can be withdrawn at any time from the
-  <a href="https://myaccount.google.com/permissions">Google account permissions</a> page,
-  which immediately invalidates the assistant's tokens. The relevant Google API
-  services can also be disabled from the Cloud console, which invalidates them as well.
+  Access is limited to one authorised account. Data is stored locally on the operator's
+  server and is not shared with or sold to any third party. Conversation content may be
+  sent to a third-party language model provider to generate responses.
 </p>
 
-<footer>
-  <p>Privacy policy: <a href="./privacy.html">Privacy Policy</a></p>
-</footer>
+<p>
+  Access can be revoked at any time from
+  <a href="https://myaccount.google.com/permissions">Google account permissions</a>.
+</p>
+
+<p><a href="./privacy.html">Privacy policy</a></p>
 
 </body>
 </html>
